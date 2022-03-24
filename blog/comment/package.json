@@ -1,0 +1,28 @@
+{
+  "name": "comment",
+  "version": "1.0.0",
+  "description": "Microservices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godfred-nsabo/microservices.git"
+  },
+  "keywords": [
+    "microservices"
+  ],
+  "author": "Godfred Nsabo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godfred-nsabo/microservices/issues"
+  },
+  "homepage": "https://github.com/godfred-nsabo/microservices#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
