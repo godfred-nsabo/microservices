@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json())
 app.use(cors());
 
-const posts = {}; // store all posts created
+const posts = []; // store all posts created
 
 app.get("/posts", (req, res) => {
   res.send(posts);
@@ -16,11 +16,12 @@ app.get("/posts", (req, res) => {
 app.post("/posts", (req, res) => {
   const id = randomBytes(4).toString("hex");
   const { title } = req.body;
-  posts[id] = {
+  let post = {
     id,
     title,
   };
-  res.status(201).send(posts[id]);
+  posts.push(post)
+  res.status(201).send(posts);
 });
 
 app.listen(4000, () => {
