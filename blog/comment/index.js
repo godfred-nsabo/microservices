@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json())
 app.use(cors());
 
-const commentsByPostId = {}; // store all posts created
+const commentsByPostId = []; // store all posts created
 
 app.get("/posts/:id/comments", (req, res) => {
   res.send(commentsByPostId[req.params.id] || []);
