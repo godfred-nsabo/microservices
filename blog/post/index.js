@@ -9,7 +9,7 @@ app.use(cors());
 
 const posts = []; // store all posts created
 
-app.get("/posts", (req, res) => {
+app.get("/posts", (_req, res) => {
   res.send(posts);
 });
 
